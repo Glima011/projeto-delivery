@@ -1,0 +1,327 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATSU SUSHI | Delivery Premium</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <a href="https://wa.me/5511941333956" target="_blank" class="whatsapp-fixo">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <header class="topo">
+
+        <div class="logo">
+            <img src="logo.png" alt="Matsu Sushi">
+        </div>
+
+        <nav id="menu">
+            <a href="#inicio">Início</a>
+            <a href="#chef">Chef</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#combos">Combos</a>
+            <a href="#avaliacoes">Avaliações</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="acoes-header">
+
+            <div class="cart-btn" onclick="abrirCarrinho()">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="contador">0</span>
+            </div>
+
+            <button class="menu-mobile" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-chef">
+            <img src="chef.jpg" alt="Chef">
+        </div>
+
+        <div class="hero-texto">
+
+            <img src="logo.png" class="logo-hero" alt="Logo Matsu">
+
+            <span class="tag">
+                🍣 Sushi Premium • Ingredientes Frescos
+            </span>
+
+            <h1>
+                EXPERIÊNCIA
+                <span>JAPONESA</span>
+            </h1>
+
+            <p>
+                Sushi artesanal preparado diariamente
+                com ingredientes selecionados e toda a
+                experiência do nosso chef.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#cardapio" class="btn1">
+                    Ver Cardápio
+                </a>
+
+                <a href="https://wa.me/5511941333956" target="_blank" class="btn2">
+                    Pedir Agora
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CHEF -->
+    <section class="destaques">
+
+        <div class="destaque">
+            🍣 Ingredientes Frescos
+        </div>
+
+        <div class="destaque">
+            🔥 Preparação Artesanal
+        </div>
+
+        <div class="destaque">
+            🚚 Entrega Rápida
+        </div>
+
+        <div class="destaque">
+            ⭐ Avaliação 4.9
+        </div>
+
+    </section>
+
+    <p>
+        Cada prato é preparado artesanalmente,
+        com cortes precisos, ingredientes frescos
+        e atenção aos mínimos detalhes para oferecer
+        uma verdadeira experiência japonesa.
+    </p>
+
+
+    </div>
+
+    </div>
+
+    </section>
+
+    <!-- PROMOÇÃO -->
+
+    <section class="promocao">
+
+        <div class="promo-box">
+            🍣 COMBO FAMÍLIA
+            <span>de R$139,90 por R$119,90</span>
+        </div>
+
+    </section>
+
+    <!-- CARDÁPIO -->
+
+    <section id="cardapio">
+
+        <h2 class="titulo">
+            Mais Pedidos
+        </h2>
+
+        <div class="produtos">
+
+            <div class="produto">
+                <img src="combinado10.jpg" alt="Combinado">
+                <div class="produto-info">
+                    <h3>Combinado Salmão</h3>
+                    <p>Seleção premium de salmão.</p>
+
+                    <div class="produto-footer">
+                        <span>R$ 16,90</span>
+                        <button onclick="adicionar('Combinado Salmão',16.90)">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="combinado12.jpg" alt="Especial">
+                <div class="produto-info">
+                    <h3>Especial Matsu</h3>
+                    <p>Peças selecionadas pelo chef.</p>
+
+                    <div class="produto-footer">
+                        <span>R$ 24,90</span>
+                        <button onclick="adicionar('Especial Matsu',24.90)">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+
+                <div class="badge">
+                    🔥 Mais Pedido
+                </div>
+
+                <img src="hotroll.jpg">
+
+                <div class="produto-info">
+
+                    <h3>Hot Roll Especial</h3>
+
+                    <p>
+                        10 unidades crocantes,
+                        molho especial da casa.
+                    </p>
+
+                    <span class="preco">
+                        R$ 34,90
+                    </span>
+
+                    <button class="btn-cardapio" onclick="adicionar('Hot Roll Especial',34.90)">
+                        Adicionar ao Pedido
+                    </button>
+
+                </div>
+
+            </div>
+
+    </section>
+
+    <!-- COMBOS -->
+
+    <section id="combos">
+
+        <h2 class="titulo">
+            Combos Especiais
+        </h2>
+
+        <div class="produtos">
+
+            <div class="produto destaque">
+
+                <img src="combinado18.jpg" alt="Combo Família">
+
+                <div class="produto-info">
+
+                    <h3>Combo Família</h3>
+
+                    <p>
+                        40 peças especiais + temakis.
+                    </p>
+
+                    <div class="produto-footer">
+
+                        <span>R$ 119,90</span>
+
+                        <button onclick="adicionar('Combo Família',119.90)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- AVALIAÇÕES -->
+
+    <section class="avaliacoes" id="avaliacoes">
+
+        <h2 class="titulo">
+            O que nossos clientes dizem
+        </h2>
+
+        <div class="cards-avaliacoes">
+
+            <div class="avaliacao">
+                <p>"Melhor sushi da região."</p>
+                <h4>⭐⭐⭐⭐⭐</h4>
+            </div>
+
+            <div class="avaliacao">
+                <p>"Peixes extremamente frescos."</p>
+                <h4>⭐⭐⭐⭐⭐</h4>
+            </div>
+
+            <div class="avaliacao">
+                <p>"Virou nosso delivery favorito."</p>
+                <h4>⭐⭐⭐⭐⭐</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CARRINHO -->
+
+    <div class="carrinho" id="carrinho">
+
+        <div class="carrinho-topo">
+
+            <h2>Seu Pedido</h2>
+
+            <button onclick="fecharCarrinho()">✕</button>
+
+        </div>
+
+        <ul id="listaCarrinho"></ul>
+
+        <div class="campo-endereco">
+            <input type="text" id="endereco" placeholder="Digite seu endereço">
+        </div>
+
+        <div class="total-box">
+            <h3>Total</h3>
+            <h2 id="total">R$ 0,00</h2>
+        </div>
+
+        <button class="whatsapp" onclick="finalizarPedido()">
+            <i class="fa-brands fa-whatsapp"></i>
+            Finalizar Pedido
+        </button>
+
+    </div>
+
+    <footer id="contato">
+
+        <h2>MATSU SUSHI</h2>
+
+        <p>📱 (11) 94133-3956</p>
+
+        <p>📍 São Paulo - SP</p>
+
+        <p>© 2026 Todos os direitos reservados</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
