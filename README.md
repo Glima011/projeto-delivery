@@ -15,3 +15,4 @@ Criar uma plataforma simples e moderna para apresentação do cardápio e realiz
 
 ## Aprendizados
 Este projeto está sendo desenvolvido como parte do meu aprendizado em desenvolvimento web, aplicando conceitos de front-end em um cenário real.
+ainda em processo...
